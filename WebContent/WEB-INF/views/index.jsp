@@ -1,7 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-
+<link rel="stylesheet" href="<c:url value='css/style.css'/>">
+<link href="https://fonts.googleapis.com/earlyaccess/nicomoji.css" rel="stylesheet">
 <c:import url="../layout/app.jsp">
     <c:param name="content">
 
@@ -11,35 +12,43 @@
             </div>
         </c:if>
 
-        <h2>タスク一覧</h2>
+        <h2>All Tasks</h2>
         <ul>
-        <c:forEach var="tasks" items="${tasks}">
+            <c:forEach var="tasks" items="${tasks}">
 
                 <li><a id="task_id"
                     href="${pageContext.request.contextPath}/show?id=${tasks.id}">
                         <c:out value="${tasks.id}" />
-                </a> <div id="task_content">&nbsp;<c:out value="${tasks.content}"/></div></li>
+                </a>
+                    <div id="task_content">
+                        &nbsp;
+                        <c:out value="${tasks.content}" />
+                    </div></li>
 
-        </c:forEach>
+            </c:forEach>
         </ul>
         <br />
 
-        <div id="pgention">
+        <div id="pagenation">
             (全${tasks_count}件)<br />
-            <c:forEach var ="i" begin ="1" end = "${((tasks_count - 1) / 10) + 1}" step="1">
+            <c:forEach var="i" begin="1" end="${((tasks_count - 1) / 10) + 1}"
+                step="1">
                 <c:choose>
                     <c:when test="${i == page}">
-                        <c:out value="${i}"/>&nbsp;
+                        <c:out value="${i}" />&nbsp;
                     </c:when>
-                <c:otherwise>
-                    <a href="${pageContext.request.contextPath}/index?page=${i}"><c:out value="${i}"/></a>&nbsp;
+                    <c:otherwise>
+                        <a href="${pageContext.request.contextPath}/index?page=${i}"><c:out
+                                value="${i}" /></a>&nbsp;
                 </c:otherwise>
                 </c:choose>
             </c:forEach>
 
         </div>
-          <br />
-        <a href="${pageContext.request.contextPath}/new">新規作成</a>
+        <br />
+
+
+        <a href="${pageContext.request.contextPath}/new">New Task？</a>
         <br />
         <br />
 

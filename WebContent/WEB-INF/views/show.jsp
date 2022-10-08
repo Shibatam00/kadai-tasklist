@@ -2,7 +2,8 @@
     pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
-
+<link rel="stylesheet" href="<c:url value='css/style.css'/>">
+<link href="https://fonts.googleapis.com/earlyaccess/nicomoji.css" rel="stylesheet">
 <c:import url="../layout/app.jsp">
     <c:param name="content">
 
@@ -32,10 +33,10 @@
                 <br />
 
                 <p>
-                    <a href="${pageContext.request.contextPath}/index">一覧へ戻る</a>
+                    <a href="${pageContext.request.contextPath}/index">←Back</a>
                 </p>
                 <p>
-                    <a href="${pageContext.request.contextPath}/edit?id=${tasks.id}">編集する</a>
+                    <a href="${pageContext.request.contextPath}/edit?id=${tasks.id}">Edit</a>
                 </p>
 
             </c:when>

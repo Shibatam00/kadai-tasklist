@@ -1,0 +1,101 @@
+@charset "UTF-8";
+
+body {
+    background: #ccc
+        url('https://images.unsplash.com/photo-1432821579285-1b649e5b1ce3?crop=entropy&fit=crop&fm=jpg&h=650&ixjsv=2.0.0&ixlib=rb-0.3.5&q=80&w=1375')
+        no-repeat top center;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: "Roboto";
+}
+
+.overlay {
+    background: rgba(55, 58, 71, 0.9);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: auto;
+    transition: .3s;
+}
+
+#form {
+    background: #F9F9F9;
+    width: 600px;
+    height: 500px;
+    margin: 0 auto;
+    border-radius: 3px;
+    box-shadow: 0 3px 36px 0 rgba(0, 0, 0, 0.6);
+    overflow: hidden;
+    transition: .3s;
+    text-align: center
+}
+h1{
+    background-color:rgba(255,255,255,0.45);
+    font: 300 60px Nico Moji;
+    text-align:center;
+    padding-bottom:30px;
+}
+
+h2 {
+    display: block;
+    margin:0 auto;
+    background-color: rgba(32, 178, 170, 0.55);
+    height: 80px;
+    margin-bottom: 30px;
+    padding: 10px;
+    color: white;
+    font: 300 60px fantasy;
+    text-align: center;
+}
+
+input {
+    display: block;
+    width: 450px;
+    padding: 5px 20%;
+    margin: 0 auto;
+    margin-top:30px;
+    border: none;
+    border-bottom: solid 1px;
+    border-color: none;
+    font-size: 15px;
+    transition: all 0.3s;
+    text-align: center;
+}
+
+label {
+    margin: 0 auto;
+}
+
+button {
+    display: block;
+    margin: 0 auto;
+    margin-top:30px;
+    width: 200px;
+    height: 40px;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
+    color: black;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+P {
+    margin-top: 20px;
+    font: 300 30px Nico Moji;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font: 300 25px Nico Moji;
+}
+#footer {
+    display: block;
+    margin: 0 auto;
+    color: white;
+    text-align: center
+}

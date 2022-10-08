@@ -6,11 +6,11 @@ body {
         no-repeat top center;
     background-size: cover;
     margin: 0;
-    font-family: '游ゴシック Medium';;
+    font-family: Roboto;
     margin: 0 auto;
 }
 
-h1 {
+#header {
     background-color: rgba(255, 255, 255, 0.45);
     font: 300 60px Nico Moji;
     text-align: center;
@@ -33,51 +33,37 @@ h1 {
     text-align: center;
     margin: 0 auto;
     padding-top: 40px;
+    padding-left: 20px;
 }
 
 h2 {
-    display: block;
-    margin: 0 auto;
-    color: white;
-    font: 300 60px Nico Moji;
-    text-align: center;
+    color:white;
+    margin: 15px auto;
+    font-size: 30px
 }
 
 #footer {
-    display: block;
-    margin: 0 auto;
-    color: white;
-    text-align: center;
-    font: 300 20px Nico Moji;
+    color:white;
+    text-align: center
 }
 
 ul {
-    font-family: '游ゴシック Medium';
-    font-size: 20px;
     display: block;
     margin: 0 auto;
-    display: block;
 }
 
 li {
-    font-family: '游ゴシック Medium';
     display: block;
     margin: 0 auto;
     margin-top: 10px;
-}
-
-#pagenation {
-    display: block;
-    margin: 0 auto;
-    font: 300 20px Nico Moji;
-    color: white
+    margin-left: 15px;
 }
 
 #task_id {
     display: block;
     margin: 0 auto;
     width: 20%;
-    padding: 2px;
+    padding: 2px 5px;
 }
 
 #task_content {
@@ -89,47 +75,41 @@ li {
 }
 
 P {
-    margin-top: 20px;
-    font: 300 30px Nico Moji;
+    margin: 20px 10px
 }
 
 a {
     text-decoration: none;
-    color: white;
-    font: 300 25px Nico Moji;
+    color:white;
 }
 
 table, th, tr, td {
-    margin: auto;
-    border: 1px solid #cccccc;
-    font: 300 25px 游ゴシック Medium;
+    border: 1px solid #cccccc
 }
 
 table {
-    width: 80%;
+    width: 85%;
 }
 
 th {
+    padding: 5px 20px;
     width: 20%;
     height: 40px;
-    background-color: rgba(164, 193, 215, 0.6);
+    background-color: rgba(164, 193, 215, 0.45);
 }
 
 td {
-    width: 80%;
-    height: 40px;
-    background-color: rgba(255, 255, 255, 0.45);
+    padding: 5px 20px;
 }
 
 #flush_success {
     display: table;
     width: 90%;
     background-color: rgba(100, 100, 100, 0.25);
-    display: block;
-    margin: 0 auto;
     margin-top: 10px;
     padding-top: 20px;
     padding-left: 10px;
     font-size: 20px;
     height: 50px;
+    font-size: 20px;
 }
